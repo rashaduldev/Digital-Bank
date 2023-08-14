@@ -14,15 +14,15 @@
     <section class="mt-16 grid grid-cols-1 lg:grid-cols-3  justify-evenly">
         <div class="py-12 bg-purple-400 mx-10 text-center rounded  mb-6 ">
             <h4 class="text-3xl mb-7 font-bold">Deposit</h4>
-            <h3 class="text-2xl font-bold">$00</h3>
+            <h3 id="dipositAmount" class="text-2xl font-bold">$00</h3>
         </div>
         <div class="py-12 bg-lime-300 mx-10 text-center rounded mb-6 ">
             <h4 class="text-3xl mb-7 font-bold">Withdraw</h4>
-            <h3 class="text-2xl font-bold">$00</h3>
+            <h3 id="withdrawAmount" class="text-2xl font-bold">$00</h3>
         </div>
         <div class="py-12 bg-green-400 mx-10 text-center rounded mb-6 ">
             <h4 class="text-3xl mb-7 font-bold">Balance</h4>
-            <h3 class="text-2xl font-bold">$1200</h3>
+            <h3 id="totalAmount" class="text-2xl font-bold">$1200</h3>
         </div>
     </section>
 
@@ -31,16 +31,20 @@
         <div class="bg-green-400 px-8 py-10 h-auto w-full mx-auto lg:ml-28 m-5 rounded-lg">
             <!-- <h2 class="bg-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2> -->
             <h2 class="text-4xl mb-6">Please Diposit</h2>
-            <input class="h-12 w-full rounded-md" type="text" placeholder="$ amount you want to diposit"> <br><br>
-            <button class="btn btn-primary">Deposit</button>
+            <input id="dipositInput" class="h-12 w-full rounded-md" type="text" placeholder="$ amount you want to diposit"> <br><br>
+            <button id="dipositButton" class="btn btn-primary">Deposit</button>
         </div>
         <div class="bg-red-400 rounded-lg px-8 py-10 h-auto w-full mx-auto lg:mr-28 m-5">
             <!-- <h2 class="bg-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2> -->
             <h2 class="text-4xl mb-6">Please Withdraw</h2>
-            <input class="h-12 w-full rounded-md" type="text" placeholder="$ amount you want to Withdraw"> <br><br>
-            <button class="btn btn-primary">Withdraw</button>
+            <input id="withdrawInput" class="h-12 w-full rounded-md" type="text" placeholder="$ amount you want to Withdraw"> <br><br>
+            <button id="withdrawButton" class="btn btn-primary">Withdraw</button>
         </div>
        
     </section>
+
+    <script src="./bank.js">
+        console.log("ok");
+    </script>
 </body>
 </html>
