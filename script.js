@@ -6,10 +6,11 @@ const user_btn=document.getElementById('user_btn');
 user_btn.addEventListener('click',function () {
     // console.log(user_btn);
     const em=user_email.value;
+    const pass=user_password.value;
     // console.log(em);
-    if (em==='r@g.com' && user_password==='abcd') {
-        console.log('vallied input');
+    if (em==='r' && pass==='abcd') {
+        window.location='bank.html';
     } else {
-        console.log("invallied input");
+       alert('Please excual email  & password');
     }
 })
