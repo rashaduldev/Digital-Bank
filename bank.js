@@ -13,7 +13,9 @@ const dipositButton=document.getElementById('dipositButton');
 const withdrawInput=document.getElementById('withdrawInput');
 const withdrawButton=document.getElementById('withdrawButton');
 
-dipositButton.addEventListener('click',function () {
-    console.log('ok');
+dipositButton.addEventListener('click',function () {  
+    const dipoIn=dipositInput.innerText;
+    dipositAmount.innerText=dipoIn;
+    console.log(dipositAmount);
 })
-console.log("ok");
+// console.log("ok");
