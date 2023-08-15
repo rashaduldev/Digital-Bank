@@ -26,7 +26,7 @@ dipositButton.addEventListener('click', function () {
     const newAmount=parseFloat(preAmount);
     const newTotalAmount=newDipoNum+newAmount;
 
-    dipositAmount.innerText = newTotalAmount;
+    // dipositAmount.innerText = newTotalAmount;
 
     const preTotalAm=totalAmount.innerText;
     const newTotalAm=parseFloat(preTotalAm);
@@ -37,15 +37,15 @@ dipositButton.addEventListener('click', function () {
     // console.log(typeof newDipoNum);
 
 
-    // console.log(dipositAmount);
-    // if (dipositAmount == 'number') {
-    //     dipositAmount.innerText = newdipoIn;
-    // } else {
-    //     // alert('sorry')
-    // }
+    console.log(dipositAmount);
+    if (newTotalAmount == 'number') {
+        dipositAmount.innerText = newTotalAmount;
+    } else {
+        alert('sorry');
+    }
 
 
-    // 
+    
     dipositInput.value = '';
 
 })
