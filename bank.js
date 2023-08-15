@@ -20,33 +20,42 @@ const withdrawButton = document.getElementById('withdrawButton');
 // })
 
 dipositButton.addEventListener('click', function () {
+
     const newdipoInString = dipositInput.value;
-    const newDipoNum=parseFloat(newdipoInString);
-    const preAmount = dipositAmount.innerText;
-    const newAmount=parseFloat(preAmount);
-    const newTotalAmount=newDipoNum+newAmount;
-
-    // dipositAmount.innerText = newTotalAmount;
-
-    const preTotalAm=totalAmount.innerText;
-    const newTotalAm=parseFloat(preTotalAm);
-    console.log(typeof newTotalAm);
-    const currTotalAmount=newTotalAm+newDipoNum;
-    totalAmount.innerText=currTotalAmount;
-    
-    // console.log(typeof newDipoNum);
-
-
-    console.log(dipositAmount);
-    if (newTotalAmount == 'number') {
-        dipositAmount.innerText = newTotalAmount;
-    } else {
+    // console.log(newdipoInString);
+    if (newdipoInString=='' || newdipoInString<'0') {
         alert('sorry');
-    }
+    } else {
 
-
+        const newDipoNum=parseFloat(newdipoInString);
+        console.log(newDipoNum);
+        if (!isNaN(newDipoNum)) {
+            const preAmount = dipositAmount.innerText;
     
-    dipositInput.value = '';
+            const newAmount=parseFloat(preAmount);
+            const newTotalAmount=newDipoNum+newAmount;
+        
+            dipositAmount.innerText = newTotalAmount;
+        
+            const preTotalAm=totalAmount.innerText;
+            const newTotalAm=parseFloat(preTotalAm);
+            // console.log(typeof newTotalAm);
+            const currTotalAmount=newTotalAm+newDipoNum;
+            totalAmount.innerText=currTotalAmount;
+        
+         
+        
+        
+            
+            dipositInput.value = '';
+        }
+        else{
+            alert('string');
+        }
+        // console.log(newdipoInString);
+       
+    }
+  
 
 })
 // console.log("ok");
