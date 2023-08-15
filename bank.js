@@ -10,9 +10,6 @@ const totalAmount = document.getElementById('totalAmount');
 const dipositInput = document.getElementById('dipositInput');
 const dipositButton = document.getElementById('dipositButton');
 
-const withdrawInput = document.getElementById('withdrawInput');
-const withdrawButton = document.getElementById('withdrawButton');
-
 // dipositButton.addEventListener('click',function () {
 //     // console.log('ok');
 //     const dipoinput=dipositInput.value;
