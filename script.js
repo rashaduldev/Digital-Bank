@@ -11,7 +11,7 @@ user_btn.addEventListener('click',function () {
     if (em==='r' && pass==='abcd') {
         window.location='bank.html';
     } else {
-       alert('Please excual email  & password');
+       alert('Wrong email or password');
     }
 })
 
