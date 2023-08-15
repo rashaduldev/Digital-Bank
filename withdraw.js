@@ -18,22 +18,26 @@ withdrawButton.addEventListener('click', function () {
     const newWithdrawAmount=parseFloat(oldWithdrawAmount);
     // console.log(newWithdrawAmount);
     // console.log(newInputValue);
-     const newpOld= newWithdrawAmount+newInputValue;
-     allWithdrawAmount.innerText=newpOld;
+   
 
      const preTotalAm=allTotalAmount.innerText;
      const newTotalAm=parseFloat(preTotalAm);
      // console.log(typeof newTotalAm);
+     withdrawInput.value='';
 
      const currallTotalAmount=newTotalAm-newInputValue;
     //  const zeroLesAmount=currallTotalAmount;
      if (currallTotalAmount<0) {
         alert('Please select Balance Amount');
+        return;
      } else {
         allTotalAmount.innerText=currallTotalAmount;
-     }
+     }  
+     
+     const newpOld= newWithdrawAmount+newInputValue;
+     allWithdrawAmount.innerText=newpOld;
      
 
-   withdrawInput.value='';
+
     }
 });
