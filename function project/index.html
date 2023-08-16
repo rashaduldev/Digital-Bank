@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>   
+</head>
+<body>
+    <header class="text-center">
+        <h1 class="text-4xl"><span class="text-5xl">Digital Bank</span> <span class="text-blue-400 font-bold">Your Money is save <span class="text-red-400">No Worries!</span></span></h1>
+    </header>
+    <section class="mt-16 grid grid-cols-1 lg:grid-cols-3  justify-evenly">
+        <div class="py-12 bg-purple-400 mx-10 text-center rounded  mb-6 ">
+            <h4 class="text-3xl mb-7 font-bold">Deposit</h4>
+            <h3  class="text-2xl font-bold">$<span id="dipositAmount">00</span></h3>
+        </div>
+        <div class="py-12 bg-lime-300 mx-10 text-center rounded mb-6 ">
+            <h4 class="text-3xl mb-7 font-bold">Withdraw</h4>
+            <h3 class="text-2xl font-bold">$<span id="withdrawAmount" >00</span></h3>
+        </div>
+        <div class="py-12 bg-green-400 mx-10 text-center rounded mb-6 ">
+            <h4 class="text-3xl mb-7 font-bold">Balance</h4>
+            <h3 class="text-2xl font-bold">$<span id="totalAmount">1200</span></h3>
+        </div>
+    </section>
+
+    <!-- add section -->
+    <section class="mt-2 flex flex-col lg:flex-row justify-center gap-12 text-white font-bold">
+        <div class="bg-green-400 px-8 py-10 h-auto w-full mx-auto lg:ml-28 m-5 rounded-lg">
+            <!-- <h2 class="bg-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2> -->
+            <h2 class="text-4xl mb-6">Please Diposit</h2>
+            <input id="dipositInput" class="h-12 w-full rounded-md text-black" type="text" placeholder="$ amount you want to diposit"> <br><br>
+            <button id="dipositButton" class="btn btn-primary">Deposit</button>
+        </div>
+        <div class="bg-red-400 rounded-lg px-8 py-10 h-auto w-full mx-auto lg:mr-28 m-5">
+            <!-- <h2 class="bg-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2> -->
+            <h2 class="text-4xl mb-6">Please Withdraw</h2>
+            <input id="withdrawInput" class="h-12 w-full rounded-md text-black" type="text" placeholder="$ amount you want to Withdraw"> <br><br>
+            <button id="withdrawButton" class="btn btn-primary">Withdraw</button>
+        </div>
+       
+    </section>
+    <!-- <input class="bg-green-400" type="password"> -->
+
+    <script src="./index.js"></script>
+</body>
+</html>
