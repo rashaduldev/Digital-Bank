@@ -22,14 +22,16 @@ function onlyTextElementById(textId) {
     return newAmount;
 }
 
-function towElementThere(params) {
-    
+function towElementThere(elementId,elementText) {
+    const totatElement=document.getElementById(elementId);
+    totatElement.innerText=elementText;
 }
 
 dipositButton.addEventListener('click',function () {
    const inpoAmount=inputTextElementById('dipositInput');
    const dipoAmount=onlyTextElementById('dipositAmount');
    const totalinpoandDipoAmount=inpoAmount+dipoAmount;
-   console.log(totalinpoandDipoAmount);
-   dipositAmount.innerText=totalinpoandDipoAmount;
+//    console.log(totalinpoandDipoAmount);
+//    dipositAmount.innerText=totalinpoandDipoAmount;
+const finalTotalAmount=towElementThere('dipositAmount',totalinpoandDipoAmount);
 })
