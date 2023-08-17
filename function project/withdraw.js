@@ -10,4 +10,5 @@ withdrawButton.addEventListener('click',function () {
     const finalAmount=onlyTextElementById('totalAmount');
     const finalTotalAmount=finalAmount-finalWipoInputAmount;
     towElementThere('totalAmount',finalTotalAmount);
+    withdrawInput.value='';
 })
