@@ -39,8 +39,7 @@ dipositButton.addEventListener('click',function () {
    towElementThere('dipositAmount',totalinpoandDipoAmount);
 
     const oldTotalAmount=onlyTextElementById('totalAmount');
-    console.log(oldTotalAmount);
-    const newTotalAmount=oldTotalAmount+dipoAmount;
-    console.log(newTotalAmount);
+    const newTotalAmount=oldTotalAmount+inpoAmount;
     towElementThere('totalAmount',newTotalAmount);
+    dipositInput.value='';
 })
